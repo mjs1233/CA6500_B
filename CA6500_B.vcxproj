@@ -141,8 +141,10 @@
     <ClInclude Include="MemoryHandle.h" />
     <ClInclude Include="Operation.h" />
     <ClInclude Include="PIN.h" />
+    <ClInclude Include="ReadModifyWriteInstruction.h" />
     <ClInclude Include="Register.h" />
     <ClInclude Include="SingleByteInstruction.h" />
+    <ClInclude Include="StackInstruction.h" />
     <ClInclude Include="StoreOperation.h" />
     <ClInclude Include="Types.h" />
   </ItemGroup>

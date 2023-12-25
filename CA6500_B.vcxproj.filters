@@ -68,5 +68,11 @@
     <ClInclude Include="StoreOperation.h">
       <Filter>헤더 파일\Operations</Filter>
     </ClInclude>
+    <ClInclude Include="StackInstruction.h">
+      <Filter>헤더 파일\Operations</Filter>
+    </ClInclude>
+    <ClInclude Include="ReadModifyWriteInstruction.h">
+      <Filter>헤더 파일\Operations</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
