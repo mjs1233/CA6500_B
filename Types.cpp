@@ -7,3 +7,11 @@ WORD makeWORD(BYTE high, BYTE low)
 	word.LOW = low;
 	return word;
 }
+
+
+WORD makeWORD(uint16_t value)
+{
+	WORD word = { 0,0 }; 
+	word.VALUE = value;
+	return word;
+}

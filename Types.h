@@ -14,3 +14,4 @@ union WORD
 typedef uint8_t BYTE;
 
 WORD makeWORD(BYTE high, BYTE low);
+WORD makeWORD(uint16_t value);

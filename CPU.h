@@ -6,6 +6,11 @@
 #include "PIN.h"
 #include "Operation.h"
 #include "SingleByteInstruction.h"
+#include "InternalExecutionOnMemoryData.h"
+#include "ReadModifyWriteInstruction.h"
+#include "StoreOperation.h"
+#include "StackInstruction.h"
+
 class CPU
 {
 	int32_t Tn = 0;
@@ -24,6 +29,11 @@ public:
 		//make shared each operation class
 		//then push operation class to operations vector 
 		operations.push_back(std::make_unique<SingleByteInstruction>());
+		operations.push_back(std::make_unique<InternalExecutionOnMemoryData>());
+		operations.push_back(std::make_unique<ReadModifyWriteOperation>());
+		operations.push_back(std::make_unique<StoreOperation>());
+		operations.push_back(std::make_unique<PushProcessorStatusInstruction>());
+		operations.push_back(std::make_unique<PullProcessorStatusInstruction>());
 		//...
 	}
 

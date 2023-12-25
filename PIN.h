@@ -5,7 +5,7 @@ class PIN
 {
 public:
 	BUS<WORD> AddressBus;
-	BUS<WORD> DataBus;
+	BUS<BYTE> DataBus;
 	BUS<RW> ReadWritePin;
 
 };
